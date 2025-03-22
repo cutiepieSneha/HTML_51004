@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A to Z Alphabet Flashcards with Fire Effect</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 3rem;
+            color: white;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+        .flashcard-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .flashcard {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform-style: preserve-3d;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+        .flashcard:hover {
+            transform: rotateY(180deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .flashcard-text {
+            position: relative;
+            z-index: 1;
+            animation: fire 1s infinite alternate;
+        }
+        @keyframes fire {
+            0% {
+                color: orange;
+                text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+            }
+            50% {
+                color: yellow;
+                text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+            }
+            100% {
+                color: red;
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>A to Z Alphabet Flashcards</h1>
+
+    <div class="flashcard-container">
+        <!-- Flashcards for A to Z -->
+        <div class="flashcard"><span class="flashcard-text">A</span></div>
+        <div class="flashcard"><span class="flashcard-text">B</span></div>
+        <div class="flashcard"><span class="flashcard-text">C</span></div>
+        <div class="flashcard"><span class="flashcard-text">D</span></div>
+        <div class="flashcard"><span class="flashcard-text">E</span></div>
+        <div class="flashcard"><span class="flashcard-text">F</span></div>
+        <div class="flashcard"><span class="flashcard-text">G</span></div>
+        <div class="flashcard"><span class="flashcard-text">H</span></div>
+        <div class="flashcard"><span class="flashcard-text">I</span></div>
+        <div class="flashcard"><span class="flashcard-text">J</span></div>
+        <div class="flashcard"><span class="flashcard-text">K</span></div>
+        <div class="flashcard"><span class="flashcard-text">L</span></div>
+        <div class="flashcard"><span class="flashcard-text">M</span></div>
+        <div class="flashcard"><span class="flashcard-text">N</span></div>
+        <div class="flashcard"><span class="flashcard-text">O</span></div>
+        <div class="flashcard"><span class="flashcard-text">P</span></div>
+        <div class="flashcard"><span class="flashcard-text">Q</span></div>
+        <div class="flashcard"><span class="flashcard-text">R</span></div>
+        <div class="flashcard"><span class="flashcard-text">S</span></div>
+        <div class="flashcard"><span class="flashcard-text">T</span></div>
+        <div class="flashcard"><span class="flashcard-text">U</span></div>
+        <div class="flashcard"><span class="flashcard-text">V</span></div>
+        <div class="flashcard"><span class="flashcard-text">W</span></div>
+        <div class="flashcard"><span class="flashcard-text">X</span></div>
+        <div class="flashcard"><span class="flashcard-text">Y</span></div>
+        <div class="flashcard"><span class="flashcard-text">Z</span></div>
+    </div>
+
+</body>
+</html>
